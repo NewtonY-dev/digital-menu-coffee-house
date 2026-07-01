@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Aroma&display=swap');
+
+:root {
+  --page-sides: clamp(1rem, 5vw, 1.25rem);
+  --bg: #fbf5f5;
+  --surface: #fff8f6;
+  --border: rgba(84, 17, 85, 0.14);
+  --text: #322537;
+  --muted: #7b6a76;
+  --accent: #8b3b73;
+  --radius: 1rem;
+  --font: 'Aroma', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.App {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.top-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem var(--page-sides);
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 56px;
+}
+
+.brand-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  width: 2.1rem;
+  height: 2.1rem;
+  object-fit: contain;
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.language-toggle {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.language-toggle:hover {
+  background: #f7edf5;
+  border-color: rgba(84, 17, 85, 0.22);
+}
+
+.page-main {
+  padding: 1rem var(--page-sides);
+}
+
+.page-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: calc(100vh - 5rem);
+}
+
+.menu-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Category filter pills */
+.category-filter {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+  flex-wrap: wrap; /* wrap to multiple lines on small screens */
+  align-items: center;
+}
+
+.category-pill {
+  background: transparent;
+  border: 1px solid rgba(139, 59, 115, 0.08);
+  color: var(--text);
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.category-pill.active {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.menu-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(139, 59, 115, 0.12);
+}
+
+.menu-card-media {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.menu-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-card-body {
+  padding: 1rem;
+}
+
+.menu-card-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.menu-card-description {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.menu-card-footer {
+  padding: 0 1rem 1rem;
+}
+
+.menu-card-price {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #8b8b8b;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .brand-logo {
+    width: 1.85rem;
+    height: 1.85rem;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .language-toggle {
+    padding: 0.5rem 0.8rem;
+  }
+}
