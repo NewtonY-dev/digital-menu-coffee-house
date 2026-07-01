@@ -1,11 +1,16 @@
-const imageMap = import.meta.glob('./assets/img/*.{png,jpg,jpeg,svg}', {
-  eager: true,
-  as: 'url',
-})
+const imageMap = import.meta.glob(
+  './assets/img/*.{png,jpg,jpeg,svg}',
+  {
+    eager: true,
+    import: 'default',
+    query: '?url',
+  }
+)
 
 const MenuCard = ({ item, language = 'en' }) => {
   const title = language === 'am' ? item.name_am : item.name_en
   const imageUrl = imageMap[`./${item.image}`] || ''
+  const img = imageMap[`./${item.image}`]
 
   return (
     <article className="menu-card">
