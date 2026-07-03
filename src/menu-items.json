@@ -1,101 +1,173 @@
 [
-  {
-    "id": 1,
-    "name_en": "Espresso",
-    "name_am": "ኤስፕሬሶ",
-    "description": "A strong, concentrated coffee shot with a rich aroma.",
-    "price": 80,
-    "image": "assets/img/espresso.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 2,
-    "name_en": "Americano",
-    "name_am": "አሜሪካኖ",
-    "description": "Espresso blended with hot water for a smooth, bold taste.",
-    "price": 90,
-    "image": "assets/img/americano.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 3,
-    "name_en": "Cappuccino",
-    "name_am": "ካፑቺኖ",
-    "description": "Espresso topped with steamed milk and a light foam layer.",
-    "price": 120,
-    "image": "assets/img/cappuccino.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 4,
-    "name_en": "Latte",
-    "name_am": "ላቲ",
-    "description": "A smooth coffee drink with steamed milk and a mild flavor.",
-    "price": 130,
-    "image": "assets/img/latte.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 5,
-    "name_en": "Macchiato",
-    "name_am": "ማኪያቶ",
-    "description": "Espresso with a small amount of milk for a balanced taste.",
-    "price": 110,
-    "image": "assets/img/macchiato.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 6,
-    "name_en": "Mocha",
-    "name_am": "ሞካ",
-    "description": "A chocolate-flavored coffee drink with a rich and sweet finish.",
-    "price": 140,
-    "image": "assets/img/mocha.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 7,
-    "name_en": "Black Tea",
-    "name_am": "ጥቁር ሻይ",
-    "description": "Classic brewed tea served hot with a clean, bold taste.",
-    "price": 60,
-    "image": "assets/img/black-tea.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 8,
-    "name_en": "Milk Tea",
-    "name_am": "የወተት ሻይ",
-    "description": "Smooth tea blended with milk for a soft and comforting flavor.",
-    "price": 75,
-    "image": "assets/img/milk-tea.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 9,
-    "name_en": "Ginger Tea",
-    "name_am": "ዝንጅብል ሻይ",
-    "description": "Warm tea with ginger for a spicy and refreshing taste.",
-    "price": 70,
-    "image": "assets/img/ginger-tea.png",
-    "category": "Hot Beverages"
-  },
-  {
-    "id": 10,
-    "name_en": "Club Sandwich",
-    "name_am": "ክለብ ሳንድዊች",
-    "description": "A layered sandwich with fresh ingredients and a satisfying taste.",
-    "price": 220,
-    "image": "assets/img/club-sandwich.png",
-    "category": "Lunch Specials"
-  },
-  {
-    "id": 11,
-    "name_en": "Chicken Sandwich",
-    "name_am": "የዶሮ ሳንድዊች",
-    "description": "Grilled chicken sandwich served fresh and filling.",
-    "price": 240,
-    "image": "assets/img/chicken-sandwich.png",
-    "category": "Lunch Specials"
-  }
+{
+"id": 1,
+"name_en": "Chechebsa",
+"name_am": "ጨጨብሳ",
+"description": "Traditional shredded flatbread mixed with spices and served warm.",
+"price": 200,
+"image": "assets/img/chechebsa.png",
+"category": "Food Menu"
+},
+{
+"id": 2,
+"name_en": "Special Chechebsa",
+"name_am": "ስፔሽል ጨጨብሳ",
+"description": "A richer chechebsa served with extra flavor and a special touch.",
+"price": 250,
+"image": "assets/img/special-chechebsa.png",
+"category": "Food Menu"
+},
+{
+"id": 3,
+"name_en": "Egg Sandwich",
+"name_am": "የእንቁላል ሳንድዊች",
+"description": "A simple sandwich filled with egg and served fresh.",
+"price": 200,
+"image": "assets/img/egg-sandwich.png",
+"category": "Food Menu"
+},
+{
+"id": 4,
+"name_en": "Avocado Juice",
+"name_am": "አቮካዶ ጁስ",
+"description": "A smooth and creamy avocado drink served chilled.",
+"price": 200,
+"image": "assets/img/avocado-juice.png",
+"category": "Juice"
+},
+{
+"id": 5,
+"name_en": "Mixed Fruit Juice",
+"name_am": "ስኘሪስ ጁስ",
+"description": "A fresh blend of mixed fruits with a sweet and refreshing taste.",
+"price": 250,
+"image": "assets/img/mixed-fruit-juice.png",
+"category": "Juice"
+},
+{
+"id": 6,
+"name_en": "Iced Coffee",
+"name_am": "አይስድ ኮፊ",
+"description": "Chilled coffee served cold for a bold and refreshing taste.",
+"price": 150,
+"image": "assets/img/iced-coffee.png",
+"category": "Coffee"
+},
+{
+"id": 7,
+"name_en": "Iced Latte",
+"name_am": "አይስድ ላቴ",
+"description": "A cold latte with smooth milk and espresso flavor.",
+"price": 150,
+"image": "assets/img/iced-latte.png",
+"category": "Coffee"
+},
+{
+"id": 8,
+"name_en": "Coffee Yejebena",
+"name_am": "የጀበና ቡና",
+"description": "Traditional Ethiopian coffee brewed and served from a jebena.",
+"price": 50,
+"image": "assets/img/coffee-yejebena.png",
+"category": "Coffee"
+},
+{
+"id": 9,
+"name_en": "Steam Coffee",
+"name_am": "የተነፋ ቡና",
+"description": "Hot steamed coffee served with a strong and simple taste.",
+"price": 50,
+"image": "assets/img/steam-coffee.png",
+"category": "Coffee"
+},
+{
+"id": 10,
+"name_en": "Espresso",
+"name_am": "ኤስፕሬሶ",
+"description": "A strong, concentrated coffee shot with a rich aroma.",
+"price": 70,
+"image": "assets/img/espresso.png",
+"category": "Coffee"
+},
+{
+"id": 11,
+"name_en": "Macchiato",
+"name_am": "ማኪያቶ",
+"description": "Espresso with a small amount of milk for a balanced taste.",
+"price": 100,
+"image": "assets/img/macchiato.png",
+"category": "Coffee"
+},
+{
+"id": 12,
+"name_en": "Special Tea",
+"name_am": "ስፔሻል ሻይ",
+"description": "A special tea blend served hot with a rich aroma.",
+"price": 150,
+"image": "assets/img/special-tea.png",
+"category": "Tea"
+},
+{
+"id": 13,
+"name_en": "Normal Tea",
+"name_am": "መደበኛ ሻይ",
+"description": "A plain hot tea served fresh and light.",
+"price": 40,
+"image": "assets/img/normal-tea.png",
+"category": "Tea"
+},
+{
+"id": 14,
+"name_en": "Spris",
+"name_am": "ስኘሪስ",
+"description": "A fresh and popular fruit-style drink served cold.",
+"price": 70,
+"image": "assets/img/spris.png",
+"category": "Coffee"
+},
+{
+"id": 15,
+"name_en": "Peanut Coffee",
+"name_am": "የለውዝ ቡና",
+"description": "Coffee blended with peanut flavor for a rich taste.",
+"price": 100,
+"image": "assets/img/peanut-coffee.png",
+"category": "Coffee"
+},
+{
+"id": 16,
+"name_en": "Peanut Tea",
+"name_am": "የለውዝ ሻይ",
+"description": "Tea with peanut flavor for a warm and nutty taste.",
+"price": 100,
+"image": "assets/img/peanut-tea.png",
+"category": "Tea"
+},
+{
+"id": 17,
+"name_en": "Milk",
+"name_am": "ወተት",
+"description": "Fresh plain milk served cold.",
+"price": 70,
+"image": "assets/img/milk.png",
+"category": "Drinks"
+},
+{
+"id": 18,
+"name_en": "Ginger Tea",
+"name_am": "ዝንጅብል ሻይ",
+"description": "Warm tea infused with ginger for a spicy and refreshing taste.",
+"price": 50,
+"image": "assets/img/ginger-tea.png",
+"category": "Tea"
+},
+{
+"id": 19,
+"name_en": "Lemon Tea",
+"name_am": "የሎሚ ሻይ",
+"description": "Light tea flavored with lemon for a fresh taste.",
+"price": 50,
+"image": "assets/img/lemon-tea.png",
+"category": "Tea"
+}
 ]

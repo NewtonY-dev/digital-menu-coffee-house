@@ -3,7 +3,7 @@ import MenuCard from './MenuCard'
 import CategoryFilter from './CategoryFilter'
 import menuItems from './menu-items.json'
 
-const categories = ['All', 'Hot Beverages', 'Lunch Specials']
+const categories = ['All', "Coffee", "Tea", 'Food Menu', 'Juice',  "Drinks"]
 
 const Menu = ({ language }) => {
   const [selected, setSelected] = useState('All')
